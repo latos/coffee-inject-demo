@@ -1,0 +1,21 @@
+<!doctype html>
+<html ng-app='testApp'>
+  <head>
+    <title>Blah</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js"></script>
+    <script src="static/npm/underscore-min.js"></script>
+    <script src="common/util.js"></script>
+    <script src="static/js/app.js"></script>
+    <link rel="stylesheet" href="static/css/app.css"/>
+  </head>
+  <body ng-controller='TestCtrl'>
+
+  <a href='/test/upload'>Upload Test</a>
+
+  <div ng-repeat='post in posts' class='post'>
+    Comment: {{post.comment}}<br/>
+    <img ng-src='{{post.url}}'/>
+  </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+/* Fix the most stupid thing about CSS */
+* {
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  box-sizing: border-box;
+}
+
+body, input, select {
+  font-family: sans-serif;
+}
+
+.post {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid silver;
+}

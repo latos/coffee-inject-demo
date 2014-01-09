@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Upload Test</title>
+  </head>
+  <body>
+    <form method='POST' enctype='multipart/form-data' action='/_a/posts'>
+      Image: <input type='file' name='file'/><br/>
+      Comment: <input type='text' name='comment'/><br/>
+      Rating: 
+        <select name='rating'>
+          <option value='0'>0</option>
+          <option value='1'>1</option>
+          <option value='2'>2</option>
+          <option value='3'>3</option>
+        </select>
+      <br/>
+      <input type='submit'/>
+    </form>
+  </body>
+</html>
